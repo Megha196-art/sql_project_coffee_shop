@@ -364,10 +364,10 @@ JOIN sales as s
 ON c.customer_id = s.customer_id
 GROUP BY 1,5;
 ```
-**tTop three citites in terms of total sales**
--- 1. Pune      total sales = (1258290) and total customers = 52
--- 2. Chennai   total sales = 944120    and total customers = 42
--- 3. Bangalore total sale = 860110     and total customers = 39
+**Top three cities in terms of total sales**
+1. Pune      total sales = (1258290) and total customers = 52
+2. Chennai   total sales = 944120    and total customers = 42
+3. Bangalore total sale = 860110     and total customers = 39
 
 ## Recommendations
 After analyzing the data, the recommended top three cities for new store openings are:
