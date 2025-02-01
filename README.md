@@ -372,19 +372,23 @@ GROUP BY 1,5;
 ## Recommendations
 After analyzing the data, the recommended top three cities for new store openings are:
 
-**City 1: Pune**  
-1. Average rent per customer is very low.  
-2. Highest total revenue.  
-3. Average sales per customer is also high.
+**1. Pune**
+1. High Revenue: Pune had one of the highest total revenues in Q4 2023.
+2. Strong Customer Base: It ranks high in unique coffee consumers.
+3. Popular Products: Cold Brew Coffee Pack, Ground Espresso, and Instant Coffee Powder performed well.
 
-**City 2: Delhi**  
-1. Highest estimated coffee consumers at 7.7 million.  
-2. Highest total number of customers, which is 68.  
-3. Average rent per customer is 330 (still under 500).
+**2. Chennai**
+1. Consistently High Sales: Ranked among the top cities in revenue and average sales per customer.
+2. Strong Coffee Culture: High unique customer count and strong demand for both coffee and related products.
+3. Top-Selling Products: Cold Brew Coffee, Coffee Beans, and Instant Coffee Powder.
 
-**City 3: Jaipur**  
-1. Highest number of customers, which is 69.  
-2. Average rent per customer is very low at 156.  
-3. Average sales per customer is better at 11.6k.
+**3. Bangalore**
+1. Tech Hub & Coffee Enthusiasts: High population of coffee consumers due to corporate culture.
+2. Top 5 in Revenue & Average Sales per Customer: Consistent performer across metrics.
+3. Best-Selling Products: Cold Brew Coffee, Ground Espresso, and Instant Coffee Powder.
+
+**Additional Insights**
+1. Delhi and Jaipur also showed strong potential, but Pune, Chennai, and Bangalore stand out due to high revenue, strong coffee culture, and proven demand for various coffee products.
+2. Cold Brew Coffee Packs are the top-selling product across most cities, indicating an opportunity for a premium, ready-to-drink coffee experience.
 
 ---
