@@ -12,7 +12,7 @@
 The business aims to expand by opening three coffee shops in India's top three major cities. Since its launch in January 2023, the company has successfully sold its products online and received an overwhelmingly positive response in several cities. As a data analyst, your task is to analyze the sales data and provide insights to recommend the top three cities for this expansion.
 
 ## Key Questions
-1. **Coffee Consumers Count**  
+Q1. **Coffee Consumers Count**  
    How many people in each city are estimated to consume coffee, given that 25% of the population does?
 
 ```sql
@@ -27,7 +27,7 @@ ORDER BY coffee_cust_in_millions DESC;
 The top 5 cities with the highest number of coffee consumers are Delhi, Mumbai, Kolkata, Bangalore, Chennai
 
 
-2. **Total Revenue from Coffee Sales**  
+Q2. **Total Revenue from Coffee Sales**  
    What is the total revenue generated from coffee sales across all cities in the last quarter of 2023?
 
 ```sql
@@ -46,7 +46,7 @@ ORDER BY total_revenue DESC;
 For the last quarter of 2023, the top 5 cities that had the highest revenue generated are Pune, Chennai, Bangalore, Jaipur, Delhi
 
 
-3. **Sales Count for Each Product**  
+Q3. **Sales Count for Each Product**  
    How many units of each coffee product have been sold?
 
 ```sql
@@ -61,7 +61,7 @@ ORDER BY product_total_sales DESC;
 ```
 When selecting products for a coffee shop, it's important to consider both popular coffee-related items and high-performing non-coffee products. Among coffee offerings, brewed coffee packs had the highest sales, followed by ground espresso, instant coffee powder, and coffee beans. Additionally, non-coffee items like the "tote bag with coffee design" also saw significant demand. This indicates an opportunity to diversify the product range, combining core coffee products with complementary merchandise to maximize sales and attract a wider customer base.
 
-4. **Average Sales Amount per City**  
+Q4. **Average Sales Amount per City**  
    What is the average sales amount per customer in each city?
 
 ```sql
@@ -80,7 +80,7 @@ ORDER BY total_revenue DESC;
 ```
 The 5 highest avg sales per customer can be seen in Pune, Chennai, Banaglore, Jaipur and Delhi
 
-5. **City Population and Coffee Consumers**  
+Q5. **City Population and Coffee Consumers**  
    Provide a list of cities along with their populations and estimated coffee consumers.
 
 ```sql
@@ -117,7 +117,7 @@ ORDER BY unique_cx DESC;
 ```
 In terms of unique customers Jaipur, Delhi, Pune, Chennai and Bangalore have the highest no. of unique customers
 
-6. **Top Selling Products by City**  
+Q6. **Top Selling Products by City**  
    What are the top 3 selling products in each city based on sales volume?
 
 ```sql
@@ -169,7 +169,7 @@ Top 3 Selling Coffee Products by City:
 This data suggests that Cold Brew Coffee Packs, Ground Espresso, and Instant Coffee Powder should be prioritized when curating a product lineup for a coffee shop.
 
 
-7. **Customer Segmentation by City**  
+Q7. **Customer Segmentation by City**  
    How many unique customers are there in each city who have purchased coffee products?
 
 ```sql
@@ -222,7 +222,7 @@ Top 3 coffee products with unique customers across Cities:
 4. Flavored coffee products (like Vanilla Coffee Syrup) could be an emerging trend, particularly in Indore.
    
 
-8. **Average Sale vs Rent**  
+Q8. **Average Sale vs Rent**  
    Find each city and their average sale per customer and avg rent per customer
 
 ```sql
@@ -279,7 +279,7 @@ ORDER BY 4;
 - While rent costs are minimal, further analysis of customer sales trends is needed to assess profitability.
 
 
-9. **Monthly Sales Growth**  
+Q9. **Monthly Sales Growth**  
    Sales growth rate: Calculate the percentage growth (or decline) in sales over different time periods (monthly).
 
 ```sql
@@ -327,77 +327,26 @@ FROM
 ```
 **Key Takeaways and Inference**
 
-**Ahmedabad**
-2023: Growth was unstable, with fluctuations from January to July. Sales stabilized from August to November, with September and November recording the highest growth rates. November had the highest monthly sales (21,250), but December saw a steep decline.
-
-2024: Overall growth remained low. August saw the lowest growth (-71.79%), while May recorded the highest growth (32.91%).
-
-**Bangalore**
-2023: June recorded 0% growth, indicating sales were the same in May and June (37,790). September had the highest growth (130.92%), while November had the highest monthly sales (106,100).
-
-2024: April saw the steepest decline (-77.57%), while September recorded the highest growth (74.72%). The highest monthly sales occurred in February (60,650).
-
-**Chennai**
-2023: September had the highest growth rate (174.69%), while December recorded the highest decline (-31.74%). The highest monthly sales were from September to December, with October having the highest (124,650). August had the lowest sales (27,850).
-
-2024: July recorded the highest growth rate (60.87%), while October saw the steepest decline (-98.48%). February recorded the highest sales (75,950), while October had the lowest (350). No records after October.
-
-**Delhi**
-2023: September had the highest growth rate (228.65%), while August saw the largest decline (-24.97%). The highest sales period was from September to December, with December recording the highest (85,690). January had the lowest sales (15,680).
-
-2024: May saw the highest growth, while October recorded the steepest decline. The highest monthly sales occurred in March (77,800), while October had the lowest (900).
-
-**Hyderabad**
-2023: Recorded some of the highest growth rates, September (112.86%) being the highest, followed by November (103.68%), May (93.44%), and February (91.24%). November had the highest monthly sales (19,350), while January had the lowest (2,170).
-
-2024: August recorded the highest growth (79.17%), while April had the highest decline (-71.60%). March recorded the highest sales (12,500), but there was a steady decline after March, with July recording the lowest sales (1,200).
-
-**Indore**
-2023: June recorded the highest growth (27,429%), while August had the highest decline (-46.90%). Sales were high from September to December, peaking in November (1,850). May had the lowest sales (1,750).
-
-2024: May recorded the highest growth (125.53%), while June saw the steepest decline (-80.50%). Sales were steady from January to March, with March recording the highest sales (112,050), while August had the lowest sales (1,250).
-
-**Jaipur**
-2023: September had the highest growth (223.21%), while June recorded the highest decline (-42.34%). The highest sales period was from September to December, with December recording the highest sales (93,830) and August the lowest (16,800).
-
-2024: September recorded the highest growth (45.66%), while October had the highest decline (-96.03%). March had the highest sales (71,100), while October recorded the lowest (900).
-
-**Kanpur**
-2023: September had the highest growth (152.50%), followed by October (136.63%). December saw the highest decline (-29.22%). The highest sales were from September to December, with November recording the highest (28,100). July had the lowest sales (2,320).
-
-2024: May saw the highest growth (254.55%), while April recorded the highest decline (-81.92%). February had the highest sales (20,650), while September had the lowest (2,550).
-
-**Kolkata**
-2023: March recorded the highest growth (160.78%), followed by October (144.06%). The highest decline was in December (-33.02%) and April (-32.33%).
-
-2024: June recorded the highest growth (142.19%), while April saw the steepest decline (-79.42%). February had the highest sales (15,950), while October had the lowest (1,500).
-
-**Lucknow**
-2023: August had the highest growth (190.70%), followed by June (182.35%) and March (155.56%). January had the highest decline (-67.51%). The highest sales were from August to December, with December recording the highest (18,250) and May the lowest (850).
-
-2024: August recorded the highest growth (81.25%), while April saw the highest decline (-78.95%). The highest sales were in March (10,450), while September had the lowest (1,450).
-
-**Mumbai**
-2023: September had the highest growth (246.67%), while July saw the highest decline (-50.89%). The highest sales were from September to December, with November recording the highest (26,350) and August the lowest (4,500).
-
-2024: August had the highest growth (158.33%), while April had the highest decline (-85.78%). Sales were steady, peaking in March (21,450) and hitting the lowest in April (3,050).
-
-**Nagpur**
-2023: September had the highest growth (208.33%), while April recorded the highest decline (-49.07%). The highest sales were in November (16,650), while January had the lowest (2,000).
-
-2024: August saw the highest growth (111.43%), while April had the highest decline (-62.85%). February had the highest sales (12,800), while July had the lowest (1,750).
-
-**Pune**
-2023: September recorded the highest growth (217.99%), while August saw the highest decline (-48.95%). Sales remained steady throughout the year, with November recording the highest (169,350) and August the lowest (27,800).
-
-2024: May had the highest growth (64.51%), while October recorded the highest decline (-96.83%). March had the highest sales (97,150), while October recorded the lowest (850). Sales were relatively steady in 2024.
-
-**Surat**
-2023: March had the highest growth (323.13%), while February recorded the highest decline (-66.32%). September to December saw the highest sales, with November recording the highest (18,250) and February the lowest (1,600).
-2024: February saw the highest growth (46.19%), while April recorded the highest decline (-57.06%). January had the highest sales (16,400), while September recorded the lowest (2,950).
+| City      | 2023 - Highest Growth | 2023 - Highest Decline | 2023 - Highest Sales | 2023 - Lowest Sales | 2024 - Highest Growth | 2024 - Highest Decline | 2024 - Highest Sales | 2024 - Lowest Sales |
+|-----------|-----------------------|------------------------|----------------------|---------------------|-----------------------|------------------------|----------------------|---------------------|
+| Ahmedabad | Sep (Highest Growth)  | Dec (Steep Decline)    | Nov (21,250)         | -                   | May (32.91%)          | Aug (-71.79%)         | -                    | -                   |
+| Bangalore | Sep (130.92%)         | -                      | Nov (106,100)        | -                   | Sep (74.72%)          | Apr (-77.57%)         | Feb (60,650)         | -                   |
+| Chennai   | Sep (174.69%)         | Dec (-31.74%)         | Oct (124,650)        | Aug (27,850)        | Jul (60.87%)          | Oct (-98.48%)         | Feb (75,950)         | Oct (350)           |
+| Delhi     | Sep (228.65%)         | Aug (-24.97%)         | Dec (85,690)         | Jan (15,680)        | May (Highest Growth)  | Oct (Steep Decline)   | Mar (77,800)         | Oct (900)           |
+| Hyderabad | Sep (112.86%)         | -                      | Nov (19,350)         | Jan (2,170)         | Aug (79.17%)          | Apr (-71.60%)         | Mar (12,500)         | Jul (1,200)         |
+| Indore    | Jun (27,429%)         | Aug (-46.90%)         | Nov (1,850)          | May (1,750)         | May (125.53%)         | Jun (-80.50%)         | Mar (112,050)        | Aug (1,250)         |
+| Jaipur    | Sep (223.21%)         | Jun (-42.34%)         | Dec (93,830)         | Aug (16,800)        | Sep (45.66%)          | Oct (-96.03%)         | Mar (71,100)         | Oct (900)           |
+| Kanpur    | Sep (152.50%)         | Dec (-29.22%)         | Nov (28,100)         | Jul (2,320)         | May (254.55%)         | Apr (-81.92%)         | Feb (20,650)         | Sep (2,550)         |
+| Kolkata   | Mar (160.78%)         | Dec (-33.02%)         | -                    | -                   | Jun (142.19%)         | Apr (-79.42%)         | Feb (15,950)         | Oct (1,500)         |
+| Lucknow   | Aug (190.70%)         | Jan (-67.51%)         | Dec (18,250)         | May (850)           | Aug (81.25%)          | Apr (-78.95%)         | Mar (10,450)         | Sep (1,450)         |
+| Mumbai    | Sep (246.67%)         | Jul (-50.89%)         | Nov (26,350)         | Aug (4,500)         | Aug (158.33%)         | Apr (-85.78%)         | Mar (21,450)         | Apr (3,050)         |
+| Nagpur    | Sep (208.33%)         | Apr (-49.07%)         | Nov (16,650)         | Jan (2,000)         | Aug (111.43%)         | Apr (-62.85%)         | Feb (12,800)         | Jul (1,750)         |
+| Pune      | Sep (217.99%)         | Aug (-48.95%)         | Nov (169,350)        | Aug (27,800)        | May (64.51%)          | Oct (-96.83%)         | Mar (97,150)         | Oct (850)           |
+| Surat     | Mar (323.13%)         | Feb (-66.32%)         | Nov (18,250)         | Feb (1,600)         | Feb (46.19%)          | Apr (-57.06%)         | Jan (16,400)         | Sep (2,950)         |
 
 
-10. **Market Potential Analysis**  
+
+Q10. **Market Potential Analysis**  
     Identify top 3 city based on highest sales, return city name, total sale, total rent, total customers, estimated  coffee consumer
 
 ```sql
