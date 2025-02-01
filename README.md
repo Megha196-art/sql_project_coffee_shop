@@ -15,14 +15,22 @@ The business aims to expand by opening three coffee shops in India's top three m
 1. **Coffee Consumers Count**  
    How many people in each city are estimated to consume coffee, given that 25% of the population does?
 
-   ```sql
-SELECT
-      city_id,
-      city_name,
-      ROUND((population * 0.25)/1000000, 2) as coffee_cust_in_millions,
-      city_rank
-FROM city
-ORDER BY coffee_cust_in_millions DESC; 
+```sql
+CREATE DATABASE sql_project1;
+
+CREATE TABLE retail_sales
+(
+    transactions_id INT PRIMARY KEY,
+    sale_date DATE,	
+    sale_time TIME,
+    customer_id INT,	
+    gender VARCHAR(10),
+    age INT,
+    category VARCHAR(35),
+    quantity INT,
+    price_per_unit FLOAT,	
+    cogs FLOAT,
+    total_sale FLOAT
 );
 ```
 
