@@ -141,26 +141,31 @@ GROUP BY ci.city_name, p.product_name
 WHERE ranking <= 3; 
 ```
 Top 3 Selling Coffee Products by City
-City	1st Best-Selling Product	2nd Best-Selling Product	3rd Best-Selling Product
-Ahmedabad	Cold Brew Coffee Pack (6 Bottles)	Coffee Beans (500g)	Instant Coffee Powder (100g)
-Bangalore	Cold Brew Coffee Pack (6 Bottles)	Ground Espresso Coffee (250g)	Instant Coffee Powder (100g)
-Chennai	Cold Brew Coffee Pack (6 Bottles)	Coffee Beans (500g)	Instant Coffee Powder (100g)
-Delhi	Ground Espresso Coffee (250g)	Instant Coffee Powder (100g)	Coffee Beans (500g)
-Hyderabad	Instant Coffee Powder (100g)	Cold Brew Coffee Pack (6 Bottles)	Ground Espresso Coffee (250g)
-Indore	Instant Coffee Powder (100g)	Ground Espresso Coffee (250g)	Cold Brew Coffee Pack (6 Bottles)
-Jaipur	Cold Brew Coffee Pack (6 Bottles)	Coffee Beans (500g)	Instant Coffee Powder (100g)
-Kanpur	Cold Brew Coffee Pack (6 Bottles)	Ground Espresso Coffee (250g)	Coffee Beans (500g)
-Kolkata	Ground Espresso Coffee (250g)	Cold Brew Coffee Pack (6 Bottles)	Coffee Beans (500g)
-Lucknow	Instant Coffee Powder (100g)	Coffee Beans (500g)	Cold Brew Coffee Pack (6 Bottles)
-Mumbai	Ground Espresso Coffee (250g)	Instant Coffee Powder (100g)	Cold Brew Coffee Pack (6 Bottles)
-Nagpur	Ground Espresso Coffee (250g)	Instant Coffee Powder (100g)	Coffee Beans (500g)
-Pune	Cold Brew Coffee Pack (6 Bottles)	Ground Espresso Coffee (250g)	Instant Coffee Powder (100g)
-Surat	Coffee Beans (500g)	Cold Brew Coffee Pack (6 Bottles)	Ground Espresso Coffee (250g)
-Key Insights:
-Cold Brew Coffee Pack (6 Bottles) emerged as the best-selling product in most cities.
-Ground Espresso Coffee (250g) consistently ranked as the second most popular product.
-Instant Coffee Powder (100g) was the third highest-selling product across multiple locations.
-Coffee Beans (500g) also performed well in several cities, particularly Ahmedabad, Chennai, Jaipur, and Surat.
+
+| City       | 1st Best-Selling Product                 | 2nd Best-Selling Product                 | 3rd Best-Selling Product                 |
+|------------|---------------------------------|---------------------------------|---------------------------------|
+| Ahmedabad  | Cold Brew Coffee Pack (6 Bottles) | Coffee Beans (500g)             | Instant Coffee Powder (100g)    |
+| Bangalore  | Cold Brew Coffee Pack (6 Bottles) | Ground Espresso Coffee (250g)   | Instant Coffee Powder (100g)    |
+| Chennai    | Cold Brew Coffee Pack (6 Bottles) | Coffee Beans (500g)             | Instant Coffee Powder (100g)    |
+| Delhi      | Ground Espresso Coffee (250g)     | Instant Coffee Powder (100g)    | Coffee Beans (500g)             |
+| Hyderabad  | Instant Coffee Powder (100g)      | Cold Brew Coffee Pack (6 Bottles) | Ground Espresso Coffee (250g)   |
+| Indore     | Instant Coffee Powder (100g)      | Ground Espresso Coffee (250g)   | Cold Brew Coffee Pack (6 Bottles) |
+| Jaipur     | Cold Brew Coffee Pack (6 Bottles) | Coffee Beans (500g)             | Instant Coffee Powder (100g)    |
+| Kanpur     | Cold Brew Coffee Pack (6 Bottles) | Ground Espresso Coffee (250g)   | Coffee Beans (500g)             |
+| Kolkata    | Ground Espresso Coffee (250g)     | Cold Brew Coffee Pack (6 Bottles) | Coffee Beans (500g)             |
+| Lucknow    | Instant Coffee Powder (100g)      | Coffee Beans (500g)             | Cold Brew Coffee Pack (6 Bottles) |
+| Mumbai     | Ground Espresso Coffee (250g)     | Instant Coffee Powder (100g)    | Cold Brew Coffee Pack (6 Bottles) |
+| Nagpur     | Ground Espresso Coffee (250g)     | Instant Coffee Powder (100g)    | Coffee Beans (500g)             |
+| Pune       | Cold Brew Coffee Pack (6 Bottles) | Ground Espresso Coffee (250g)   | Instant Coffee Powder (100g)    |
+| Surat      | Coffee Beans (500g)               | Cold Brew Coffee Pack (6 Bottles) | Ground Espresso Coffee (250g)   |
+
+
+**Key Insights:**
+1. Cold Brew Coffee Pack (6 Bottles) emerged as the best-selling product in most cities.
+2. Ground Espresso Coffee (250g) consistently ranked as the second most popular product.
+3. Instant Coffee Powder (100g) was the third highest-selling product across multiple locations.
+4. Coffee Beans (500g) also performed well in several cities, particularly Ahmedabad, Chennai, Jaipur, and Surat.
+   
 This data suggests that Cold Brew Coffee Packs, Ground Espresso, and Instant Coffee Powder should be prioritized when curating a product lineup for a coffee shop.
 
 8. **Customer Segmentation by City**  
